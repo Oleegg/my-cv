@@ -1,0 +1,10 @@
+.main {
+  background: #fff;
+  padding: 2rem;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 1rem;
+    width: 100%;
+  }
+}
