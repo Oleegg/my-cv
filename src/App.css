@@ -10,3 +10,15 @@
 .link {
   text-decoration: none;
 }
+
+.svg {
+  width: 30px;
+  height: 30px;
+  fill: aliceblue;
+}
+
+.line {
+  border-bottom: 1px solid #222;
+  padding: 1px;
+  margin: 0 2rem;
+}

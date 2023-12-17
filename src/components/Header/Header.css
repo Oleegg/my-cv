@@ -1,9 +1,10 @@
 .header {
-  background: #454E5C;
+  background: #454e5c;
   display: flex;
   color: aliceblue;
   justify-content: space-between;
   max-height: 200px;
+  letter-spacing: 0.1rem;
 }
 .header__logo {
   max-width: 200px;
@@ -25,15 +26,23 @@
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  padding-right: 2rem;
+  padding: 2rem 2rem 1rem 0;
   gap: 1rem;
 }
 .header__link {
   color: aliceblue;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0;
 }
-.header button {
+.header__link .svg {
+  width: 20px;
+  height: 20px;
+}
+.header .leng-btn {
   margin-top: 2rem;
   padding: 10px;
   align-self: center;
-  color: aqua;
+  cursor: pointer;
 }
