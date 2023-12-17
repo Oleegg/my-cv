@@ -1,0 +1,12 @@
+.app {
+  text-align: center;
+  background: #8f8f8f;
+  min-height: 100vh;
+  max-width: 1420px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+}

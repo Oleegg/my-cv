@@ -1,0 +1,39 @@
+.header {
+  background: #454E5C;
+  display: flex;
+  color: aliceblue;
+  justify-content: space-between;
+  max-height: 200px;
+}
+.header__logo {
+  max-width: 200px;
+}
+.header__content {
+  display: flex;
+  flex: 1;
+  padding-left: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+.header__content h1 {
+  text-transform: uppercase;
+}
+.header__links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-right: 2rem;
+  gap: 1rem;
+}
+.header__link {
+  color: aliceblue;
+}
+.header button {
+  margin-top: 2rem;
+  padding: 10px;
+  align-self: center;
+  color: aqua;
+}
