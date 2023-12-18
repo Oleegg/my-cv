@@ -14,43 +14,38 @@
   margin: 0.5rem;
 }
 
-.about {
-  p {
-    text-align: justify;
-  }
+.about p {
+  text-align: justify;
 }
 
 .skills {
   max-width: 320px;
   grid-area: skills;
-  &__item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
+}
+.skills__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .hobby {
   grid-area: hobby;
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-    align-items: start;
-    padding-left: 2rem;
-  }
+}
+.hobby__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: start;
+  padding-left: 2rem;
 }
 
 .projects {
   grid-area: projects;
-  &__list {
-  }
 }
-
 .education {
   grid-area: education;
-  &__img {
-    width: 100px;
-    height: 100px;
-  }
+}
+.education__img {
+  width: 100px;
+  height: 100px;
 }
