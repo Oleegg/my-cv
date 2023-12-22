@@ -1,13 +1,13 @@
-import { useAppSelector } from "../new/store/store";
-import content from "../../content.json";
-import Line from "./Line";
+import { useAppSelector } from "../store/store";
+import content from "../../content";
+import Line from "../elements/Line";
 
 const Projects = () => {
   const lang = useAppSelector((state) => state.app.Languages);
 
   return (
     <section className="projects">
-      <h3>{lang === "en" ? "PROGECTS" : "ПРОЕКТЫ"}</h3>
+      <h3 id="projects">{lang === "en" ? "PROGECTS" : "ПРОЕКТЫ"}</h3>
       <Line />
       <ul className="section-list projects__list">
         {content.sections.projects.map((project, i) => (

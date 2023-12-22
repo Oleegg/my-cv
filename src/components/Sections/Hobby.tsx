@@ -1,13 +1,13 @@
-import content from "../../content.json";
-import { useAppSelector } from "../new/store/store";
-import Line from "./Line";
+import content from "../../content";
+import { useAppSelector } from "../store/store";
+import Line from "../elements/Line";
 
 const Hobby = () => {
   const lang = useAppSelector((state) => state.app.Languages);
 
   return (
     <section className="hobby">
-      <h3>{lang === "en" ? "HOBBY" : "ХОББИ"}</h3>
+      <h3 id="hobby">{lang === "en" ? "HOBBY" : "ХОББИ"}</h3>
       <Line />
       <div className="section-list">
         {content.sections.hobby[`${lang}`].map((el, i) => (

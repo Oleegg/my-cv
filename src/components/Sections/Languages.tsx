@@ -1,19 +1,18 @@
-import { useAppSelector } from "../new/store/store";
-import content from "../../content.json";
-import Line from "./Line";
+import { useAppSelector } from "../store/store";
+import content from "../../content";
+import Line from "../elements/Line";
 
 const Languages = () => {
   const lang = useAppSelector((state) => state.app.Languages);
   const text = content.sections.languages[`${lang}`];
-  console.log(text);
 
   return (
-    <section>
-      <h3>{lang === "en" ? "LANGUAGES" : "ЯЗЫКИ"}</h3>
+    <section className="languages">
+      <h3 id="languages">{lang === "en" ? "LANGUAGES" : "ЯЗЫКИ"}</h3>
       <Line />
       <div className="section-list">
-        {text.map((el) => (
-          <p className="section__item">
+        {text.map((el, i) => (
+          <p key={i} className="section__item">
             {el.title}
             {` - `}
             {el.level}

@@ -15,17 +15,28 @@
 @media screen and (max-width: 900px) {
   .main__content {
     grid-template-areas:
-      "skills hobby projects"
-      "skills hobby projects "
-      "skills education languages ";
+      "skills education projects"
+      "skills education projects "
+      "skills hobby  languages ";
+  }
+  .contacts-element {
+    padding-left: 1rem;
   }
 }
 
 @media screen and (max-width: 750px) {
   .main__content {
     grid-template-areas:
+      "contacts social"
       "skills  projects"
-      "languages education"
-      "hobby education";
+      "skills education"
+      "hobby languages ";
+  }
+}
+@media screen and (max-width: 620px) {
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

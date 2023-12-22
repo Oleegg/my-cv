@@ -1,14 +1,14 @@
-import { useAppSelector } from "../new/store/store";
-import content from "../../content.json";
+import { useAppSelector } from "../store/store";
+import content from "../../content.js";
 import certificate from "../../images/img/education.jpg";
-import Line from "./Line";
+import Line from "../elements/Line";
 
 const Education = () => {
   const lang = useAppSelector((state) => state.app.Languages);
 
   return (
     <section className="education">
-      <h3>{lang === "en" ? "EDUCATION" : "ОБРАЗОВАНИЕ"}</h3>
+      <h3 id="education">{lang === "en" ? "EDUCATION" : "ОБРАЗОВАНИЕ"}</h3>
       <Line />
       <ul className="section-list">
         {content.sections.education.map((place, i) => (
