@@ -1,14 +1,14 @@
-import content from "../../content.json";
+import content from "../../content";
 import sprite from "../../images/svg/sprite.svg";
-import { useAppSelector } from "../new/store/store";
-import Line from "./Line";
+import { useAppSelector } from "../store/store";
+import Line from "../elements/Line";
 
 const Skills = () => {
   const lang = useAppSelector((state) => state.app.Languages);
 
   return (
     <section className="skills">
-      <h3>{lang === "en" ? "SKILLS & TOOLS" : "НАВЫКИ"}</h3>
+      <h3 id="skills">{lang === "en" ? "SKILLS & TOOLS" : "НАВЫКИ"}</h3>
       <Line />
       <ul className="section-list">
         {content.sections.skills.map((skill, i) => (
