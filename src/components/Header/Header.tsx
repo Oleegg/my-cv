@@ -56,7 +56,7 @@ const Header = () => {
           </div>
           <button onClick={changeLanguages} className="leng-btn">
             <span></span>
-            {lang.toUpperCase()}
+            {lang === "ru" ? "EN" : "RU"}
           </button>
         </div>
         <Menu isOpen={isOpenMenu} setIsOpen={setIsOpenMenu} />
