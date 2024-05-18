@@ -1,12 +1,14 @@
 import Header from "./components/Header/Header";
 import "./App.scss";
 import Main from "./components/Main/Main";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="app">
       <Header />
       <Main />
+      <Footer />
     </div>
   );
 }

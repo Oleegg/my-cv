@@ -1,0 +1,21 @@
+.footer {
+  position: sticky;
+  bottom: 20px;
+
+  text-align: right;
+}
+
+.footer.invisible {
+  display: none;
+}
+
+.footer__arrow svg {
+  fill: #454e5c96;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .footer {
+    display: block;
+  }
+}

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import photo from "../../images/img/22.jpg";
 import content from "../../content";
 import ContactsElement from "../elements/Contacts";
@@ -31,13 +30,13 @@ const Header = () => {
 
   return (
     <header className="header">
-      <img src={photo} alt="My photo" className="header__logo" />
-      <div className="header__content">
+      <img src={photo} alt="I" className="header__logo" />
+      <div className="header__content" id="top">
         <div className="header__title">
           <h1>
             {my.surname[`${lang}`]} {my.name[`${lang}`]}
           </h1>
-          <h3>{my.profession}</h3>
+          <h2>{my.profession}</h2>
         </div>
         <div className="header__social">
           <SocialElement />
